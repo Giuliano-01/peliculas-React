@@ -68,7 +68,7 @@ function App() {
       localStorage.setItem('favMovies', JSON.stringify(tempMoviesinFavs));
 
       setFavorites(tempMoviesinFavs);
-
+      alert("se agrego la pelicula!");
       console.log("se agrego la pelicula");
     }else{
       //si la pelicula ESTÁ en el array (filtro por id)
