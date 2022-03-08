@@ -79,7 +79,7 @@ function Listado(props){
                                                 <div className='d-flex img-container'>
                                                     <img src={notFoundImage} className="card-img-top img-fluid" alt="..." />
                                                 </div>
-                                                <button className='favourite-btn' onClick={props.addOrRemoveFavs} data-movie-id={oneMovie.id}>{(favMovies != []) && ((favMovies.find(favMovies => favMovies.id === `${oneMovie.id}`) && ("❤")))}{(favMovies == []) && (favMovies.find(favMovies => favMovies.id === `${oneMovie.id}`) && ("🖤"))}</button>
+                                                <button className='favourite-btn' onClick={props.addOrRemoveFavs} data-movie-id={oneMovie.id}>{(favMovies !== []) && ((favMovies.find(favMovies => favMovies.id === `${oneMovie.id}`) && ("❤")))}{(favMovies === []) && (favMovies.find(favMovies => favMovies.id === `${oneMovie.id}`) && ("🖤"))}</button>
                                                 <div className="card-body d-flex flex-column justify-content-between">
                                                   <h4 className="card-title text-center">{oneMovie.title.substring(0,30)}...</h4>
                                                   <p className="card-text">{oneMovie.overview.substring(0,100)}...</p>
@@ -98,7 +98,7 @@ function Listado(props){
                                                 <div className='d-flex img-container'>
                                                     <img src={`https://image.tmdb.org/t/p/w500/${oneMovie.poster_path}`} className="card-img-top img-fluid" alt="..." />
                                                 </div>
-                                                <button className='favourite-btn' onClick={props.addOrRemoveFavs} data-movie-id={oneMovie.id}>{(favMovies != []) && (favMovies.find(favMovies => favMovies.id === `${oneMovie.id}`) && ("❤"))}{(favMovies == []) && (favMovies.find(favMovies => favMovies.id === `${oneMovie.id}`) && ("🖤"))}</button>
+                                                <button className='favourite-btn' onClick={props.addOrRemoveFavs} data-movie-id={oneMovie.id}>{(favMovies !== []) && (favMovies.find(favMovies => favMovies.id === `${oneMovie.id}`) && ("❤"))}{(favMovies === []) && (favMovies.find(favMovies => favMovies.id === `${oneMovie.id}`) && ("🖤"))}</button>
                                                 <div className="card-body d-flex flex-column justify-content-between">
                                                   <h4 className="card-title text-center">{oneMovie.title.substring(0,30)}...</h4>
                                                   <p className="card-text">{oneMovie.overview.substring(0,100)}...</p>

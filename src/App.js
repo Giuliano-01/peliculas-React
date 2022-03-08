@@ -7,7 +7,6 @@ import Header from './Components/Header';
 import Login from "./Components/Login";
 import Listado from "./Components/Listado";
 import Resultados from './Components/Resultados';
-import Resultados2 from './Components/Resultados2';
 import Favoritos from './Components/Favoritos';
 import Detalle from './Components/Detalle';
 import BusquedaAvanzada from './Components/BusquedaAvanzada';
