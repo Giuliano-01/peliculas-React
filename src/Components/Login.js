@@ -115,7 +115,7 @@ function Login(){
 
         console.log("estamos listos para enviar la informacion");
         sessionStorage.setItem('token','tokenkey');
-
+        navigate('/home');
         //le envio los datos siguientes a la API del challenge
     /*  axios
             .post('http://challenge-react.alkemy.org' , {email, password}) //la api si no recibe el email correcto da error 401
