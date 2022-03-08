@@ -1,0 +1,21 @@
+
+.img-container{
+    width: 100%;
+}
+    .img-container img{
+        object-fit: cover;
+    }
+    
+.favourite-btn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    top: 10px;
+    font-size: 13px;
+}
