@@ -114,10 +114,11 @@ function Login(){
         }
 
         console.log("estamos listos para enviar la informacion");
-        
+        sessionStorage.setItem('token','tokenkey');
+
         //le envio los datos siguientes a la API del challenge
-        axios
-            .post('https://cors-anywhere.herokuapp.com/http://challenge-react.alkemy.org' , {email, password}) //la api si no recibe el email correcto da error 401
+    /*  axios
+            .post('http://challenge-react.alkemy.org' , {email, password}) //la api si no recibe el email correcto da error 401
             .then( (res) => {
                 swAlert(
                     <h2>Has ingresado correctamente</h2>
@@ -138,8 +139,9 @@ function Login(){
                 button.disabled = false;
                 navigate('/home');
             });
-            
+    */        
     };
+    
 
     /*Token Verify*/
     let token = sessionStorage.getItem('token');
