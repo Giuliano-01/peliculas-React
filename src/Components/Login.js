@@ -117,7 +117,7 @@ function Login(){
         
         //le envio los datos siguientes a la API del challenge
         axios
-            .post('https://challenge-react.alkemy.org' , {email, password}) //la api si no recibe el email correcto da error 401
+            .post('https://cors-anywhere.herokuapp.com/http://challenge-react.alkemy.org' , {email, password}) //la api si no recibe el email correcto da error 401
             .then( (res) => {
                 swAlert(
                     <h2>Has ingresado correctamente</h2>
