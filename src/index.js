@@ -8,7 +8,7 @@ import './Css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/peliculas-React">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
